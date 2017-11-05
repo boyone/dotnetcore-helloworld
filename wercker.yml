@@ -20,7 +20,7 @@ build:
           cp -r . $WERCKER_OUTPUT_DIR/app
           cd $WERCKER_OUTPUT_DIR/app
 deploy:
-  step:
+  steps:
     - internal/docker-push:
         username: $USERNAME
         password: $PASSWORD
